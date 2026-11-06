@@ -1,0 +1,21 @@
+{
+  "name": "casal-odonto-love",
+  "version": "1.0.0",
+  "description": "",
+  "main": "download_assets.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "lucide": "^1.70.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.6"
+  }
+}

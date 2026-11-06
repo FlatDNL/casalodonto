@@ -1,0 +1,1229 @@
+# CRIAÇÃO DE LANDING PAGE PREMIUM — CASAL ODONTOLOVE
+
+Você é um **designer UI/UX sênior, desenvolvedor frontend sênior e especialista em landing pages premium para clínicas odontológicas**.
+
+Sua tarefa é criar uma landing page completa, moderna, sofisticada, responsiva e de alto nível para o **Casal Odontolove**, utilizando como referência visual PRINCIPAL o protótipo fornecido e utilizando os dados reais disponíveis no arquivo `instagram.json` e no perfil do Instagram:
+
+**Instagram:** @casalodontolove  
+**URL:** https://www.instagram.com/casalodontolove/
+
+---
+
+# 1. REGRA MAIS IMPORTANTE
+
+O site NÃO deve parecer um template genérico de clínica odontológica.
+
+Ele deve reproduzir a sensação visual do protótipo apresentado:
+
+- premium
+- sofisticado
+- editorial
+- moderno
+- minimalista
+- elegante
+- emocional
+- focado em transformação do sorriso
+- alto padrão
+- visual semelhante a uma marca de estética/odontologia premium
+
+A referência visual deve ser seguida de maneira muito próxima em:
+
+- estrutura
+- hierarquia
+- espaçamento
+- proporções
+- tipografia
+- composição
+- cards
+- imagens
+- contraste
+- animações
+- uso de espaço negativo
+- tratamento fotográfico
+- experiência mobile
+
+Não faça simplesmente uma página com "Header + Serviços + Sobre + Contato".
+
+Construa uma experiência visual.
+
+---
+
+# 2. FONTE DE DADOS
+
+Você terá acesso ao arquivo:
+
+`instagram.json`
+
+Esse arquivo contém informações extraídas do perfil do Instagram `@casalodontolove`.
+
+O JSON deve ser tratado como uma das principais fontes de conteúdo do site.
+
+Além disso, você pode consultar o perfil:
+
+https://www.instagram.com/casalodontolove/
+
+IMPORTANTE:
+
+Não invente informações.
+
+Não invente:
+
+- tratamentos
+- números
+- depoimentos
+- endereço
+- telefones adicionais
+- horários
+- equipamentos
+- especialidades
+- certificações
+- prêmios
+- nomes
+- resultados
+- frases atribuídas aos profissionais
+
+Se uma informação não estiver disponível no JSON ou no Instagram, não invente.
+
+---
+
+# 3. IDENTIDADE E POSICIONAMENTO
+
+O site deve posicionar o Casal Odontolove principalmente como uma clínica especializada em:
+
+**transformação do sorriso**
+
+e não simplesmente como uma clínica odontológica genérica.
+
+A comunicação deve transmitir:
+
+- transformação
+- naturalidade
+- planejamento
+- estética
+- harmonia
+- personalidade
+- confiança
+- experiência
+- cuidado individualizado
+
+A ideia central é:
+
+> Transformar o sorriso sem perder a identidade da pessoa.
+
+Uma direção conceitual importante é:
+
+**"Não é apenas transformar o sorriso. É transformar a forma como você se vê."**
+
+Essa frase pode ser utilizada como conceito editorial, mas não deve ser apresentada como uma citação oficial dos profissionais.
+
+---
+
+# 4. DADOS REAIS IDENTIFICADOS
+
+Utilize somente quando confirmados no arquivo/Instagram.
+
+### Profissionais
+
+**Dr. Claumir Arcanjo**  
+CRO/SP 89515
+
+**Dra. Roberta Arcanjo**  
+CRO/SP 86846
+
+O perfil utiliza o nome:
+
+**Dr. Claumir Arcanjo | Dra. Roberta Arcanjo**
+
+---
+
+# 5. INFORMAÇÕES DE CREDIBILIDADE
+
+O material extraído apresenta como elementos de autoridade:
+
+- mais de 20 anos de experiência/atuação
+- mais de 10.000 pacientes
+- aproximadamente 21 mil seguidores no Instagram
+
+Se esses números estiverem disponíveis no JSON/perfil, utilize-os visualmente na seção de autoridade.
+
+Apresente-os de forma elegante.
+
+Exemplo:
+
+**+20 anos**  
+Transformando sorrisos
+
+**+10 mil**  
+Pacientes
+
+**+21 mil**  
+No Instagram
+
+Não transforme esses números em uma seção visual pesada.
+
+Eles devem funcionar como uma faixa editorial de credibilidade.
+
+---
+
+# 6. WHATSAPP
+
+Utilize o WhatsApp encontrado nos dados:
+
+**+55 11 99779-4600**
+
+O principal CTA do site deve direcionar para o WhatsApp.
+
+Criar botão:
+
+**Agendar uma avaliação**
+
+ou
+
+**Falar pelo WhatsApp**
+
+Não inventar outros números.
+
+O botão flutuante do WhatsApp deve permanecer acessível no mobile.
+
+---
+
+# 7. IMAGENS — REGRA FUNDAMENTAL
+
+As imagens reais do Instagram são MUITO importantes neste projeto.
+
+NÃO utilize imagens genéricas de bancos de imagens quando houver imagens reais disponíveis no `instagram.json`.
+
+O site deve priorizar:
+
+1. imagens reais extraídas do JSON;
+2. imagens reais disponíveis no perfil do Instagram;
+3. imagens dos próprios profissionais;
+4. fotos reais de resultados;
+5. fotos reais da clínica;
+6. vídeos/reels reais, quando apropriado.
+
+Somente utilizar imagens genéricas se realmente não existir uma imagem real adequada.
+
+---
+
+# 8. COMO TRABALHAR COM O instagram.json
+
+Analise o arquivo inteiro antes de construir o site.
+
+Para cada post, identifique:
+
+- `displayUrl`
+- `videoUrl`
+- `caption`
+- `altText`
+- `topics`
+- `timestamp`
+- `postType`
+- `isReel`
+- `locationName`
+- `ownerFullName`
+- `shortCode`
+- hashtags
+- informações de tratamento
+
+Crie uma pequena classificação interna das imagens.
+
+Por exemplo:
+
+### Categoria: Lentes de porcelana
+Posts relacionados a:
+- lentes de porcelana
+- facetas
+- transformação estética
+- smile makeover
+
+### Categoria: Lentes em resina
+Posts relacionados a:
+- resina
+- facetas em resina
+- troca de lentes
+- restaurações
+
+### Categoria: Gengivoplastia
+Posts relacionados a:
+- sorriso gengival
+- gengivoplastia
+- resultado + depoimento
+
+### Categoria: Restaurações
+Posts relacionados a:
+- resina composta
+- função
+- vedação
+- estética
+
+### Categoria: Cirurgia
+Posts relacionados a:
+- siso
+- dente incluso
+- cirurgia
+- tomografia Cone Beam
+
+### Categoria: Transformações
+Posts relacionados a:
+- antes/depois
+- transformação do sorriso
+- smile makeover
+
+---
+
+# 9. NÃO FAÇA APENAS UM FEED DO INSTAGRAM
+
+Não coloque simplesmente uma grade de posts do Instagram como conteúdo principal.
+
+O Instagram deve funcionar como:
+
+**biblioteca de conteúdo e prova social.**
+
+Transforme o conteúdo em uma narrativa própria.
+
+A página deve conduzir o usuário pela seguinte jornada:
+
+**Desejo → Identificação → Transformação → Prova → Autoridade → Confiança → Conversão**
+
+---
+
+# 10. ESTRUTURA DA LANDING PAGE
+
+Criar uma landing page longa, elegante e altamente visual.
+
+Estrutura:
+
+1. Header
+2. Hero
+3. Barra de autoridade
+4. Introdução / posicionamento
+5. Tratamentos principais
+6. Transformações / antes e depois
+7. Filosofia de naturalidade e planejamento
+8. Profissionais
+9. Experiência / autoridade
+10. Depoimentos
+11. Conteúdo / Instagram
+12. CTA final
+13. Localização/contato, somente se houver dados reais
+14. Footer
+
+---
+
+# 11. HEADER
+
+Criar header elegante.
+
+Desktop:
+
+Logo/nome do Casal Odontolove à esquerda.
+
+Menu:
+
+- Início
+- Tratamentos
+- Transformações
+- O Casal
+- Depoimentos
+- Instagram
+- Contato
+
+CTA à direita:
+
+**Agendar avaliação**
+
+Mobile:
+
+- logo/nome
+- menu hamburger
+- CTA de WhatsApp
+
+O header deve ser:
+
+- sticky
+- elegante
+- discreto
+- com efeito de transparência/blur ao rolar
+
+---
+
+# 12. HERO
+
+Essa é uma das partes MAIS IMPORTANTES.
+
+O hero deve seguir o conceito do protótipo.
+
+Layout desktop:
+
+Lado esquerdo:
+
+pequena label:
+
+**ODONTOLOGIA ESTÉTICA**
+
+Headline grande:
+
+# Transformamos sorrisos.
+# Valorizamos quem você é.
+
+Texto:
+
+Uma transformação planejada para valorizar o seu sorriso, respeitando suas características, sua personalidade e sua naturalidade.
+
+CTA principal:
+
+**Agendar uma avaliação**
+
+CTA secundário:
+
+**Conheça nosso trabalho**
+
+Lado direito:
+
+Utilizar uma fotografia REAL dos profissionais ou uma fotografia real de alta qualidade encontrada no Instagram.
+
+Se houver uma foto adequada do casal, priorizá-la.
+
+A imagem deve ocupar grande parte do hero.
+
+Evitar aparência de banco de imagens.
+
+---
+
+# 13. HERO — COMPOSIÇÃO VISUAL
+
+O hero deve ter:
+
+- fundo escuro
+- tipografia clara
+- detalhes em champagne/dourado
+- fotografia grande
+- bastante espaço negativo
+- composição editorial
+
+Paleta aproximada:
+
+### Background
+Preto / carvão:
+
+`#111111`
+
+### Cream
+`#F4EFE7`
+
+### Champagne
+`#C7A66A`
+
+### Branco
+`#FFFFFF`
+
+Não exagerar no dourado.
+
+O dourado deve ser utilizado apenas como detalhe premium.
+
+---
+
+# 14. BARRA DE AUTORIDADE
+
+Logo abaixo do hero:
+
+Criar uma faixa horizontal sofisticada.
+
+Exemplo:
+
+**+20 anos**  
+Transformando sorrisos
+
+**+10 mil**  
+Pacientes
+
+**+21 mil**  
+Seguidores
+
+Adicionar separadores finos.
+
+No mobile:
+
+transformar em cards ou grid de 3 colunas.
+
+---
+
+# 15. INTRODUÇÃO
+
+Criar seção editorial.
+
+Título:
+
+# Um sorriso pode transformar muito mais do que a aparência.
+
+Texto baseado no posicionamento real encontrado no Instagram.
+
+A comunicação deve falar sobre:
+
+- autoestima
+- naturalidade
+- harmonia
+- planejamento
+- personalidade
+- transformação
+
+Não exagerar em promessas.
+
+---
+
+# 16. TRATAMENTOS
+
+Criar seção:
+
+## Transformações que fazem sentido para você
+
+Utilizar os tratamentos encontrados de forma recorrente no Instagram.
+
+Priorizar:
+
+### 01 — Lentes de Porcelana
+
+Foco:
+
+- transformação estética
+- harmonia
+- proporção
+- planejamento
+
+Utilizar uma imagem REAL de um caso de lentes de porcelana.
+
+Existe no material um caso relacionado a:
+
+**20 lentes em porcelana, cor BL1**
+
+Utilizar essa informação apenas quando a imagem correspondente puder ser identificada.
+
+---
+
+### 02 — Lentes em Resina
+
+Foco:
+
+- naturalidade
+- forma
+- proporção
+- textura
+- harmonia
+
+Existe conteúdo real sobre uma paciente que já possuía lentes em resina e passou por uma nova transformação.
+
+Essa narrativa é excelente para a página.
+
+---
+
+### 03 — Transformação do Sorriso
+
+Utilizar imagens reais de smile makeover.
+
+---
+
+### 04 — Restaurações em Resina Composta
+
+Utilizar o conteúdo real encontrado no Instagram.
+
+A comunicação deve destacar:
+
+- função
+- vedação
+- estética
+
+---
+
+### 05 — Gengivoplastia
+
+Existe conteúdo real sobre:
+
+**correção do sorriso gengival**
+
+e também resultado + depoimento.
+
+Utilizar esse material.
+
+---
+
+### 06 — Extração de Siso
+
+Existe conteúdo real relacionado a:
+
+- dente incluso
+- cirurgia
+- tomografia Cone Beam
+
+Utilizar a imagem/vídeo correspondente quando apropriado.
+
+---
+
+# 17. DESIGN DOS CARDS DE TRATAMENTO
+
+Não criar cards genéricos com ícones.
+
+Cada card deve possuir:
+
+- imagem grande
+- número pequeno
+- título
+- descrição curta
+- link "Conheça"
+
+Os cards devem parecer editoriais.
+
+Desktop:
+
+grid de 2 ou 3 colunas.
+
+Mobile:
+
+carrossel horizontal ou cards empilhados.
+
+---
+
+# 18. SEÇÃO DE TRANSFORMAÇÕES
+
+Essa seção deve ser uma das mais impactantes da página.
+
+Título:
+
+# Antes de transformar o sorriso, entendemos a pessoa.
+
+Criar galeria de resultados.
+
+Priorizar imagens reais de:
+
+- antes/depois
+- lentes
+- resina
+- transformação do sorriso
+- gengivoplastia
+
+Quando existirem imagens "ANTES" e "DEPOIS" correspondentes no Instagram, montar um componente visual de comparação.
+
+Ideal:
+
+**Before / After Slider**
+
+com o usuário podendo arrastar o divisor.
+
+---
+
+# 19. IMPORTANTE SOBRE ANTES E DEPOIS
+
+Não alterar artificialmente as fotos.
+
+Não aplicar:
+
+- filtros pesados
+- inteligência artificial
+- retoques que modifiquem o resultado
+- dentes artificialmente brancos
+- geração de pacientes
+
+As fotos devem permanecer fiéis às imagens reais.
+
+Se uma imagem não tiver par correspondente, mostrar como resultado individual e não inventar um antes/depois.
+
+---
+
+# 20. SEÇÃO "NATURALIDADE"
+
+Criar uma seção de grande impacto visual.
+
+Headline:
+
+# Naturalidade não é acaso.
+# É planejamento.
+
+Texto:
+
+A transformação estética deve respeitar forma, proporção, textura, harmonia e as características individuais de cada sorriso.
+
+Utilizar como referência o conteúdo real publicado sobre a paciente que já possuía lentes em resina.
+
+Essa seção deve ter:
+
+- imagem grande
+- texto
+- elemento gráfico discreto
+- animação suave
+
+---
+
+# 21. PROFISSIONAIS
+
+Criar seção:
+
+# Duas pessoas.
+# Uma mesma paixão por transformar sorrisos.
+
+Mostrar:
+
+### Dr. Claumir Arcanjo
+CRO/SP 89515
+
+### Dra. Roberta Arcanjo
+CRO/SP 86846
+
+Utilizar fotografias reais encontradas no Instagram.
+
+Evitar fotos geradas por IA.
+
+Se existirem fotos individuais dos profissionais, utilizá-las.
+
+Se existir uma fotografia dos dois juntos, utilizar também.
+
+---
+
+# 22. HUMANIZAÇÃO
+
+O perfil mostra que os profissionais são um casal.
+
+Isso pode ser utilizado para criar uma identidade mais humana e diferenciada.
+
+Porém:
+
+NÃO transformar o site em um site pessoal.
+
+A relação do casal deve funcionar como elemento de identidade da marca:
+
+**Casal Odontolove**
+
+A comunicação deve transmitir:
+
+- parceria
+- experiência
+- proximidade
+- confiança
+- cuidado
+
+---
+
+# 23. DEPOIMENTOS
+
+Utilizar somente depoimentos reais encontrados no JSON/Instagram.
+
+Um exemplo disponível no conteúdo:
+
+> "Tô de sorriso novo! Lentes de porcelana by Casal Odontolove"
+
+Se utilizar esse depoimento, manter o sentido original e indicar claramente que é um depoimento publicado pela paciente.
+
+Não criar nomes ou avaliações falsas.
+
+Não gerar depoimentos fictícios.
+
+Criar uma seção elegante com:
+
+- foto/vídeo quando disponível
+- depoimento
+- nome somente quando publicamente disponível no conteúdo fornecido
+- tratamento relacionado, quando confirmado
+
+---
+
+# 24. INSTAGRAM
+
+Criar uma seção:
+
+# Sorrisos reais.
+# Histórias reais.
+
+Mostrar uma seleção de conteúdos do Instagram.
+
+Não mostrar todos os posts.
+
+Selecionar os conteúdos visualmente mais fortes.
+
+Priorizar:
+
+- transformações
+- antes/depois
+- profissionais
+- bastidores
+- resultados
+- depoimentos
+
+Cada item pode abrir o post original do Instagram.
+
+Adicionar CTA:
+
+**Ver mais no Instagram**
+
+Link para:
+
+https://www.instagram.com/casalodontolove/
+
+---
+
+# 25. CTA FINAL
+
+Criar uma seção grande e emocional.
+
+Fundo escuro.
+
+Headline:
+
+# Seu novo sorriso começa com uma conversa.
+
+Texto:
+
+Conte o que você gostaria de transformar e converse com nossa equipe.
+
+CTA:
+
+**Agendar avaliação pelo WhatsApp**
+
+Utilizar o número real:
+
++55 11 99779-4600
+
+Criar botão de WhatsApp funcional.
+
+---
+
+# 26. FOOTER
+
+Footer minimalista.
+
+Incluir:
+
+**Casal Odontolove**
+
+Dr. Claumir Arcanjo  
+CRO/SP 89515
+
+Dra. Roberta Arcanjo  
+CRO/SP 86846
+
+Instagram
+
+WhatsApp
+
+Outras informações somente se estiverem disponíveis nos dados reais.
+
+---
+
+# 27. ESTILO VISUAL
+
+Seguir rigorosamente o conceito do protótipo.
+
+### Cores
+
+Principal:
+
+`#111111`
+
+Secundária:
+
+`#F4EFE7`
+
+Destaque:
+
+`#C7A66A`
+
+Branco:
+
+`#FFFFFF`
+
+Cinza:
+
+`#8C8C8C`
+
+---
+
+# 28. TIPOGRAFIA
+
+Utilizar uma combinação de:
+
+### Headings
+
+Uma serif elegante/editorial.
+
+Sugestões:
+
+- Cormorant Garamond
+- Playfair Display
+- DM Serif Display
+
+### Body
+
+Uma sans-serif moderna:
+
+- Inter
+- Manrope
+- DM Sans
+
+A combinação deve transmitir:
+
+**luxo + odontologia + editorial + modernidade**
+
+Evitar fontes excessivamente ornamentadas.
+
+---
+
+# 29. ANIMAÇÕES
+
+Utilizar animações sofisticadas e discretas.
+
+Exemplos:
+
+- fade-up
+- reveal
+- image reveal
+- parallax leve
+- scale suave
+- hover elegante
+- cards entrando durante scroll
+- números animados
+- before/after slider
+- carrosséis suaves
+
+NÃO utilizar:
+
+- animações exageradas
+- efeitos neon
+- bounce
+- elementos piscando
+- excesso de movimento
+
+O site deve parecer caro e sofisticado.
+
+---
+
+# 30. EXPERIÊNCIA MOBILE
+
+O mobile é prioridade.
+
+A página deve ser desenvolvida primeiro pensando em:
+
+**375px**
+
+Depois:
+
+- 390px
+- 430px
+- tablet
+- desktop
+
+No mobile:
+
+- hero vertical
+- imagem grande
+- CTA fácil de tocar
+- menu hamburger
+- WhatsApp flutuante
+- cards em carrossel
+- textos menores
+- espaçamentos adequados
+- nenhuma quebra de layout
+
+---
+
+# 31. RESPONSIVIDADE
+
+Testar pelo menos:
+
+### Mobile
+375px
+390px
+430px
+
+### Tablet
+768px
+1024px
+
+### Desktop
+1280px
+1440px
+1920px
+
+Nenhuma seção deve apresentar:
+
+- overflow horizontal
+- texto cortado
+- imagens deformadas
+- botões fora da tela
+- elementos sobrepostos
+- problemas de altura
+- fontes exageradamente grandes
+
+---
+
+# 32. TECNOLOGIA
+
+Se o ambiente permitir, utilizar:
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide Icons
+
+Arquitetura limpa e componentizada.
+
+Criar componentes reutilizáveis:
+
+- Header
+- Hero
+- Stats
+- TreatmentCard
+- Treatments
+- BeforeAfter
+- Professionals
+- Testimonial
+- InstagramGallery
+- CTA
+- Footer
+- WhatsAppButton
+
+---
+
+# 33. ESTRUTURA DE DADOS
+
+Não espalhar URLs de imagens manualmente pelo código.
+
+Criar uma estrutura de dados.
+
+Exemplo conceitual:
+
+```ts
+const instagramContent = [
+  {
+    id: "...",
+    type: "porcelain",
+    image: "...",
+    video: "...",
+    caption: "...",
+    postUrl: "...",
+  }
+]
+```
+
+Classificar os posts de acordo com seu conteúdo.
+
+Isso facilitará a manutenção futura.
+
+---
+
+# 34. TRATAMENTO DAS IMAGENS
+
+Para cada imagem:
+
+- utilizar `object-fit: cover` quando apropriado
+- manter proporção
+- utilizar `object-position` para enquadramento correto
+- aplicar bordas/arredondamento discretos
+- evitar excesso de sombras
+- não colocar filtros pesados
+
+O design deve valorizar as fotografias.
+
+---
+
+# 35. PERFORMANCE
+
+O site deve ser rápido.
+
+Utilizar:
+
+- lazy loading
+- otimização de imagens
+- WebP/AVIF quando possível
+- Next/Image quando disponível
+- carregamento progressivo
+- evitar vídeos pesados carregados automaticamente
+- preload somente para imagens críticas do hero
+
+Não carregar todos os vídeos do Instagram imediatamente.
+
+---
+
+# 36. SEO
+
+Criar SEO básico completo.
+
+Title sugerido:
+
+**Casal Odontolove | Transformação do Sorriso em Bragança Paulista**
+
+Description:
+
+Criar uma descrição baseada exclusivamente nas informações reais disponíveis.
+
+Adicionar:
+
+- Open Graph
+- favicon
+- metadata
+- headings semânticos
+- alt text nas imagens
+- schema apropriado se houver informações suficientes
+
+Não inventar endereço ou informações clínicas.
+
+---
+
+# 37. ACESSIBILIDADE
+
+Garantir:
+
+- contraste adequado
+- alt text
+- navegação por teclado
+- aria-label nos botões
+- foco visível
+- tamanho adequado dos botões
+- respeito a `prefers-reduced-motion`
+
+---
+
+# 38. REGRAS SOBRE CONTEÚDO MÉDICO
+
+Não fazer promessas médicas.
+
+Não utilizar frases como:
+
+- "resultado garantido"
+- "sorriso perfeito para todos"
+- "resultado definitivo"
+- "sem riscos"
+- "100% garantido"
+
+O conteúdo do Instagram deixa claro que cada paciente possui características únicas e que o resultado não deve ser tratado como referência genérica.
+
+Manter essa responsabilidade na comunicação.
+
+---
+
+# 39. DIREITOS DE IMAGEM
+
+As fotos reais encontradas no Instagram devem ser utilizadas apenas se houver autorização para utilização no site.
+
+Estruturar o código de forma que seja fácil substituir qualquer imagem posteriormente.
+
+Não gerar rostos de pacientes por IA para representar resultados reais.
+
+Não misturar uma imagem gerada por IA com a indicação de que ela representa um paciente real.
+
+---
+
+# 40. PROTÓTIPO — REFERÊNCIA VISUAL ABSOLUTA
+
+A imagem/protótipo fornecida junto deste prompt deve ser tratada como referência visual principal.
+
+Quero que você observe cuidadosamente:
+
+- proporção das seções
+- tamanho dos títulos
+- espaçamento
+- contraste
+- posição das imagens
+- estilo dos cards
+- estética editorial
+- uso do preto
+- uso do champagne
+- composição do hero
+- seção de estatísticas
+- before/after
+- cards de tratamentos
+- seção dos profissionais
+- depoimentos
+- CTA final
+
+Não substitua essa direção por um template padrão.
+
+---
+
+# 41. RESULTADO ESPERADO
+
+O resultado final deve parecer um site desenvolvido por uma agência especializada em branding e experiências digitais premium.
+
+A sensação deve ser:
+
+**"Essa é uma clínica odontológica de alto padrão especializada em transformação do sorriso."**
+
+e não:
+
+**"Esse é mais um template de dentista."**
+
+---
+
+# 42. ORDEM DE EXECUÇÃO
+
+Antes de escrever o código:
+
+### ETAPA 1
+Analise completamente o `instagram.json`.
+
+### ETAPA 2
+Identifique todas as imagens disponíveis.
+
+### ETAPA 3
+Classifique as imagens por:
+
+- profissionais
+- lentes de porcelana
+- lentes de resina
+- restaurações
+- gengivoplastia
+- cirurgia
+- antes/depois
+- depoimentos
+- clínica
+- bastidores
+
+### ETAPA 4
+Escolha as melhores imagens para cada seção.
+
+### ETAPA 5
+Mapeie cada imagem para o componente correspondente.
+
+### ETAPA 6
+Crie a estrutura visual.
+
+### ETAPA 7
+Implemente o desktop.
+
+### ETAPA 8
+Faça a adaptação mobile.
+
+### ETAPA 9
+Adicione animações.
+
+### ETAPA 10
+Faça revisão visual completa comparando com o protótipo.
+
+---
+
+# 43. REGRA FINAL
+
+Não comece inventando conteúdo.
+
+Primeiro analise os dados.
+
+Depois monte a narrativa.
+
+Depois selecione as imagens.
+
+Depois desenvolva.
+
+Se uma informação não existir:
+
+**não invente.**
+
+Se uma imagem real existir:
+
+**prefira a imagem real.**
+
+Se houver dúvida sobre uma informação:
+
+**não assuma.**
+
+O resultado deve ser fiel:
+
+**ao protótipo visual + ao conteúdo real do Instagram + à identidade do Casal Odontolove.**
