@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderInstagramFeed();
   setupMobileMenu();
   setupScrollEffects();
+  setupScrollReveal();
 });
 
 /* =========================================================================
@@ -46,7 +47,7 @@ function renderNavbar() {
         <!-- CTA Header -->
         <div class="hidden sm:flex items-center space-x-4">
           <a href="${CLINIC_INFO.whatsapp.link}" target="_blank" rel="noopener noreferrer" 
-             class="inline-flex items-center px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-[#C7A66A] to-[#A88849] text-black hover:opacity-95 shadow-lg shadow-[#C7A66A]/20 transition-all duration-300 hover:scale-[1.02]">
+             class="btn-gold-pulse inline-flex items-center px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-[#C7A66A] to-[#A88849] text-black shadow-lg shadow-black/40">
             <span>Agendar Avaliação</span>
             <svg class="w-3.5 h-3.5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -123,7 +124,7 @@ function renderHeroStats() {
   if (!statsContainer) return;
 
   statsContainer.innerHTML = CLINIC_INFO.stats.map((stat, idx) => `
-    <div class="flex-1 text-center md:text-left py-4 px-4 ${idx < CLINIC_INFO.stats.length - 1 ? 'md:border-r border-[#C7A66A]/20' : ''}">
+    <div class="reveal-fade-up delay-${(idx + 1) * 150} flex-1 text-center md:text-left py-4 px-4 ${idx < CLINIC_INFO.stats.length - 1 ? 'md:border-r border-[#C7A66A]/20' : ''}">
       <div class="text-3xl lg:text-4xl font-sans font-medium text-[#C7A66A] font-bold tracking-tight mb-1">
         ${stat.number}
       </div>
@@ -144,11 +145,11 @@ function renderTreatments() {
   const grid = document.getElementById('treatments-grid');
   if (!grid) return;
 
-  grid.innerHTML = TREATMENTS.map(t => `
-    <div class="group relative bg-[#181818] rounded-2xl overflow-hidden border border-[#C7A66A]/15 hover:border-[#C7A66A]/50 transition-all duration-500 flex flex-col justify-between">
+  grid.innerHTML = TREATMENTS.map((t, idx) => `
+    <div class="reveal-fade-up delay-${(idx % 3 + 1) * 100} interactive-card group relative bg-[#181818] rounded-2xl overflow-hidden border border-[#C7A66A]/15 flex flex-col justify-between">
       <div class="relative aspect-[16/11] overflow-hidden bg-black/40">
         <img src="${t.image}" alt="${t.alt}" loading="lazy" 
-             class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100">
+             class="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100">
         <div class="absolute inset-0 bg-gradient-to-t from-[#181818] via-transparent to-black/20"></div>
         <span class="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-[#C7A66A] font-sans font-medium text-sm font-bold px-3 py-1 rounded-full border border-[#C7A66A]/30">
           ${t.number}
@@ -192,8 +193,8 @@ function renderBeforeAfterSliders() {
   const container = document.getElementById('before-after-container');
   if (!container) return;
 
-  container.innerHTML = BEFORE_AFTER_CASES.map(item => `
-    <div class="bg-[#181818] rounded-2xl p-6 sm:p-8 border border-[#C7A66A]/20 shadow-xl">
+  container.innerHTML = BEFORE_AFTER_CASES.map((item, idx) => `
+    <div class="reveal-fade-up delay-${(idx + 1) * 150} interactive-card bg-[#181818] rounded-2xl p-6 sm:p-8 border border-[#C7A66A]/20 shadow-xl">
       <div class="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <span class="text-xs uppercase tracking-widest text-[#C7A66A] font-semibold block mb-1">
@@ -204,7 +205,7 @@ function renderBeforeAfterSliders() {
           </h3>
         </div>
         <div class="text-xs text-[#8C8C8C] flex items-center gap-2">
-          <svg class="w-4 h-4 text-[#C7A66A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-4 h-4 text-[#C7A66A] animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"/>
           </svg>
           <span>Arraste o cursor para comparar</span>
@@ -313,11 +314,11 @@ function renderProfessionals() {
   const container = document.getElementById('professionals-grid');
   if (!container) return;
 
-  container.innerHTML = CLINIC_INFO.professionals.map(p => `
-    <div class="bg-[#181818] rounded-2xl overflow-hidden border border-[#C7A66A]/20 p-8 flex flex-col justify-between group hover:border-[#C7A66A]/50 transition-all duration-300">
+  container.innerHTML = CLINIC_INFO.professionals.map((p, idx) => `
+    <div class="reveal-fade-up delay-${(idx + 1) * 200} interactive-card bg-[#181818] rounded-2xl overflow-hidden border border-[#C7A66A]/20 p-8 flex flex-col justify-between group">
       <div>
         <div class="flex items-center space-x-4 mb-6">
-          <div class="w-14 h-14 rounded-full border border-[#C7A66A]/40 overflow-hidden flex-shrink-0">
+          <div class="w-14 h-14 rounded-full border border-[#C7A66A]/40 overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
             <img src="images/profile-avatar.jpg" alt="${p.name}" class="w-full h-full object-cover">
           </div>
           <div>
@@ -350,8 +351,8 @@ function renderTestimonials() {
   const container = document.getElementById('testimonials-grid');
   if (!container) return;
 
-  container.innerHTML = TESTIMONIALS.map(t => `
-    <div class="bg-[#181818] rounded-2xl p-6 sm:p-8 border border-[#C7A66A]/15 flex flex-col justify-between hover:border-[#C7A66A]/40 transition-all duration-300">
+  container.innerHTML = TESTIMONIALS.map((t, idx) => `
+    <div class="reveal-fade-up delay-${(idx + 1) * 150} interactive-card bg-[#181818] rounded-2xl p-6 sm:p-8 border border-[#C7A66A]/15 flex flex-col justify-between">
       <div>
         <div class="flex items-center space-x-3 mb-6">
           <div class="w-12 h-12 rounded-full overflow-hidden border border-[#C7A66A]/30">
@@ -386,9 +387,9 @@ function renderInstagramFeed() {
   const container = document.getElementById('instagram-gallery');
   if (!container) return;
 
-  container.innerHTML = INSTAGRAM_FEED.map(post => `
+  container.innerHTML = INSTAGRAM_FEED.map((post, idx) => `
     <a href="${post.url}" target="_blank" rel="noopener noreferrer" 
-       class="group relative aspect-square rounded-xl overflow-hidden bg-black/40 border border-[#C7A66A]/15 block">
+       class="reveal-scale-in delay-${(idx % 6 + 1) * 75} group relative aspect-square rounded-xl overflow-hidden bg-black/40 border border-[#C7A66A]/15 block">
       <img src="${post.image}" alt="${post.title}" loading="lazy" 
            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100">
       <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -401,4 +402,38 @@ function renderInstagramFeed() {
       </div>
     </a>
   `).join('');
+}
+
+/* =========================================================================
+   8. SCROLL REVEAL OBSERVER (INTERSECTION OBSERVER)
+   ========================================================================= */
+function setupScrollReveal() {
+  // Respect prefers-reduced-motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal-fade-up, .reveal-fade-in, .reveal-slide-left, .reveal-slide-right, .reveal-scale-in').forEach(el => {
+      el.classList.add('is-revealed');
+    });
+    return;
+  }
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -60px 0px',
+    threshold: 0.12
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        obs.unobserve(entry.target); // Reveal once smoothly
+      }
+    });
+  }, observerOptions);
+
+  // Small delay to ensure all dynamically generated items are in the DOM
+  setTimeout(() => {
+    const targets = document.querySelectorAll('.reveal-fade-up, .reveal-fade-in, .reveal-slide-left, .reveal-slide-right, .reveal-scale-in');
+    targets.forEach(target => observer.observe(target));
+  }, 100);
 }

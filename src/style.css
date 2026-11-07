@@ -85,6 +85,139 @@
   font-family: 'Google Sans', 'Product Sans', sans-serif !important;
 }
 
+/* =========================================================================
+   IMPECCABLE MOTION SYSTEM (PERFORMANCE, PURPOSE & SENSORY REFINEMENT)
+   ========================================================================= */
+
+/* Reveal base states */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-in {
+  opacity: 0;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity;
+}
+
+.reveal-slide-left {
+  opacity: 0;
+  transform: translateX(-36px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-slide-right {
+  opacity: 0;
+  transform: translateX(36px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale-in {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Revealed active state triggered by IntersectionObserver */
+.is-revealed {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+/* Stagger delay utility classes */
+.delay-100 { transition-delay: 100ms; }
+.delay-150 { transition-delay: 150ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Micro-interactions & Tactile Hover States */
+.interactive-card {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.interactive-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(199, 166, 106, 0.5) !important;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+}
+
+/* Button magnetic pulse and smooth sheen */
+.btn-gold-pulse {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold-pulse::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent,
+    rgba(255, 255, 255, 0.22),
+    transparent
+  );
+  transform: rotate(25deg) translateY(-100%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-gold-pulse:hover::after {
+  transform: rotate(25deg) translateY(100%);
+}
+
+.btn-gold-pulse:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(199, 166, 106, 0.35);
+}
+
+.btn-gold-pulse:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Subtle continuous ambient pulse for highlight badge */
+@keyframes ambient-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(199, 166, 106, 0.12);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(199, 166, 106, 0.3);
+  }
+}
+
+.glow-ambient {
+  animation: ambient-glow 4s ease-in-out infinite;
+}
+
+/* Respect user accessibility preference: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-fade-up,
+  .reveal-fade-in,
+  .reveal-slide-left,
+  .reveal-slide-right,
+  .reveal-scale-in,
+  .interactive-card {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+  .btn-gold-pulse::after {
+    display: none;
+  }
+}
+
 /* Escala e legibilidade aprimorada para Mobile (Fontes maiores e confortáveis) */
 @media (max-width: 640px) {
   body {
@@ -126,9 +259,7 @@
 
 /* Custom Utilities & Editorial Accents */
 .gold-gradient-text {
-  background: linear-gradient(135deg, #FFF0D4 0%, #C7A66A 50%, #9C7D40 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #C7A66A;
 }
 
 .gold-border-glow {
@@ -138,7 +269,7 @@
 
 .gold-border-glow:hover {
   border-color: rgba(199, 166, 106, 0.6);
-  box-shadow: 0 8px 32px rgba(199, 166, 106, 0.12);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 /* Subtle editorial scrollbar */
