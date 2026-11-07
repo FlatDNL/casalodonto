@@ -3,7 +3,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
       <div class="flex items-center justify-between h-20">
         <!-- Logo / Brand -->
         <a href="#hero" class="flex flex-col group">
-          <span class="text-xl sm:text-2xl font-serif tracking-wide text-white group-hover:text-[#C7A66A] transition-colors duration-300">
+          <span class="text-xl sm:text-2xl font-sans font-medium tracking-wide text-white group-hover:text-[#C7A66A] transition-colors duration-300">
             Casal Odontolove
           </span>
           <span class="text-[10px] tracking-[0.25em] uppercase text-[#C7A66A] font-medium">
@@ -45,7 +45,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
 
     <!-- Mobile Drawer -->
     <div id="mobile-drawer" class="hidden md:hidden bg-[#111111]/98 backdrop-blur-xl border-b border-[#C7A66A]/20 px-6 py-8 transition-all duration-300">
-      <div class="flex flex-col space-y-5 text-base tracking-widest uppercase font-serif text-[#F4EFE7]">
+      <div class="flex flex-col space-y-5 text-base tracking-widest uppercase font-sans font-medium text-[#F4EFE7]">
         <a href="#hero" class="mobile-nav-link hover:text-[#C7A66A] py-1 border-b border-white/5">Início</a>
         <a href="#tratamentos" class="mobile-nav-link hover:text-[#C7A66A] py-1 border-b border-white/5">Tratamentos</a>
         <a href="#transformacoes" class="mobile-nav-link hover:text-[#C7A66A] py-1 border-b border-white/5">Transformações</a>
@@ -63,7 +63,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
     </div>
   `)}function t(){let e=document.getElementById(`mobile-menu-btn`),t=document.getElementById(`mobile-drawer`);e&&t&&(e.addEventListener(`click`,()=>{t.classList.toggle(`hidden`)}),t.querySelectorAll(`.mobile-nav-link`).forEach(e=>{e.addEventListener(`click`,()=>{t.classList.add(`hidden`)})}))}function c(){let e=document.getElementById(`main-header`);window.addEventListener(`scroll`,()=>{window.scrollY>40?(e.classList.add(`bg-[#111111]/90`,`backdrop-blur-md`,`border-b`,`border-[#C7A66A]/20`,`shadow-2xl`),e.classList.remove(`bg-transparent`)):(e.classList.remove(`bg-[#111111]/90`,`backdrop-blur-md`,`border-b`,`border-[#C7A66A]/20`,`shadow-2xl`),e.classList.add(`bg-transparent`))})}function l(){let e=document.getElementById(`authority-stats`);e&&(e.innerHTML=n.stats.map((e,t)=>`
     <div class="flex-1 text-center md:text-left py-4 px-4 ${t<n.stats.length-1?`md:border-r border-[#C7A66A]/20`:``}">
-      <div class="text-3xl lg:text-4xl font-serif text-[#C7A66A] font-bold tracking-tight mb-1">
+      <div class="text-3xl lg:text-4xl font-sans font-medium text-[#C7A66A] font-bold tracking-tight mb-1">
         ${e.number}
       </div>
       <div class="text-xs uppercase tracking-widest text-[#F4EFE7] font-semibold mb-0.5">
@@ -79,7 +79,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
         <img src="${e.image}" alt="${e.alt}" loading="lazy" 
              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100">
         <div class="absolute inset-0 bg-gradient-to-t from-[#181818] via-transparent to-black/20"></div>
-        <span class="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-[#C7A66A] font-serif text-sm font-bold px-3 py-1 rounded-full border border-[#C7A66A]/30">
+        <span class="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-[#C7A66A] font-sans font-medium text-sm font-bold px-3 py-1 rounded-full border border-[#C7A66A]/30">
           ${e.number}
         </span>
       </div>
@@ -89,7 +89,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
           <span class="text-[11px] uppercase tracking-widest text-[#C7A66A] font-semibold block mb-2">
             ${e.tag}
           </span>
-          <h3 class="text-2xl font-serif text-[#F4EFE7] mb-3 group-hover:text-[#C7A66A] transition-colors duration-300">
+          <h3 class="text-2xl font-sans font-medium text-[#F4EFE7] mb-3 group-hover:text-[#C7A66A] transition-colors duration-300">
             ${e.title}
           </h3>
           <p class="text-sm text-[#8C8C8C] leading-relaxed mb-4">
@@ -98,7 +98,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
         </div>
 
         <div class="pt-4 border-t border-white/5 flex items-center justify-between">
-          <span class="text-xs text-[#F4EFE7]/60 italic font-serif">
+          <span class="text-xs text-[#F4EFE7]/60 italic font-sans font-medium">
             ${e.highlight}
           </span>
           <a href="${n.whatsapp.link}" target="_blank" rel="noopener noreferrer" 
@@ -118,7 +118,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
           <span class="text-xs uppercase tracking-widest text-[#C7A66A] font-semibold block mb-1">
             ${e.category}
           </span>
-          <h3 class="text-2xl sm:text-3xl font-serif text-[#F4EFE7]">
+          <h3 class="text-2xl sm:text-3xl font-sans font-medium text-[#F4EFE7]">
             ${e.title}
           </h3>
         </div>
@@ -173,7 +173,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
             <img src="images/profile-avatar.jpg" alt="${e.name}" class="w-full h-full object-cover">
           </div>
           <div>
-            <h3 class="text-2xl font-serif text-[#F4EFE7] group-hover:text-[#C7A66A] transition-colors">
+            <h3 class="text-2xl font-sans font-medium text-[#F4EFE7] group-hover:text-[#C7A66A] transition-colors">
               ${e.name}
             </h3>
             <span class="text-xs uppercase tracking-widest text-[#C7A66A] font-semibold block">
@@ -209,7 +209,7 @@ var e=(e,t,n)=>()=>{if(n)throw n[0];try{return e&&(t=e(e=0)),t}catch(e){throw n=
           </div>
         </div>
 
-        <blockquote class="text-base sm:text-lg font-serif italic text-[#F4EFE7] leading-relaxed mb-6">
+        <blockquote class="text-base sm:text-lg font-sans font-medium italic text-[#F4EFE7] leading-relaxed mb-6">
           "${e.quote}"
         </blockquote>
       </div>

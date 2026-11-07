@@ -24,7 +24,7 @@ function renderNavbar() {
       <div class="flex items-center justify-between h-20">
         <!-- Logo / Brand -->
         <a href="#hero" class="flex flex-col group">
-          <span class="text-xl sm:text-2xl font-serif tracking-wide text-white group-hover:text-[#C7A66A] transition-colors duration-300">
+          <span class="text-xl sm:text-2xl font-sans font-medium tracking-wide text-white group-hover:text-[#C7A66A] transition-colors duration-300">
             Casal Odontolove
           </span>
           <span class="text-[10px] tracking-[0.25em] uppercase text-[#C7A66A] font-medium">
@@ -66,7 +66,7 @@ function renderNavbar() {
 
     <!-- Mobile Drawer -->
     <div id="mobile-drawer" class="hidden md:hidden bg-[#111111]/98 backdrop-blur-xl border-b border-[#C7A66A]/20 px-6 py-8 transition-all duration-300">
-      <div class="flex flex-col space-y-5 text-base tracking-widest uppercase font-serif text-[#F4EFE7]">
+      <div class="flex flex-col space-y-5 text-base tracking-widest uppercase font-sans font-medium text-[#F4EFE7]">
         <a href="#hero" class="mobile-nav-link hover:text-[#C7A66A] py-1 border-b border-white/5">Início</a>
         <a href="#tratamentos" class="mobile-nav-link hover:text-[#C7A66A] py-1 border-b border-white/5">Tratamentos</a>
         <a href="#transformacoes" class="mobile-nav-link hover:text-[#C7A66A] py-1 border-b border-white/5">Transformações</a>
@@ -124,7 +124,7 @@ function renderHeroStats() {
 
   statsContainer.innerHTML = CLINIC_INFO.stats.map((stat, idx) => `
     <div class="flex-1 text-center md:text-left py-4 px-4 ${idx < CLINIC_INFO.stats.length - 1 ? 'md:border-r border-[#C7A66A]/20' : ''}">
-      <div class="text-3xl lg:text-4xl font-serif text-[#C7A66A] font-bold tracking-tight mb-1">
+      <div class="text-3xl lg:text-4xl font-sans font-medium text-[#C7A66A] font-bold tracking-tight mb-1">
         ${stat.number}
       </div>
       <div class="text-xs uppercase tracking-widest text-[#F4EFE7] font-semibold mb-0.5">
@@ -150,7 +150,7 @@ function renderTreatments() {
         <img src="${t.image}" alt="${t.alt}" loading="lazy" 
              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100">
         <div class="absolute inset-0 bg-gradient-to-t from-[#181818] via-transparent to-black/20"></div>
-        <span class="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-[#C7A66A] font-serif text-sm font-bold px-3 py-1 rounded-full border border-[#C7A66A]/30">
+        <span class="absolute top-4 left-4 bg-black/70 backdrop-blur-md text-[#C7A66A] font-sans font-medium text-sm font-bold px-3 py-1 rounded-full border border-[#C7A66A]/30">
           ${t.number}
         </span>
       </div>
@@ -160,7 +160,7 @@ function renderTreatments() {
           <span class="text-[11px] uppercase tracking-widest text-[#C7A66A] font-semibold block mb-2">
             ${t.tag}
           </span>
-          <h3 class="text-2xl font-serif text-[#F4EFE7] mb-3 group-hover:text-[#C7A66A] transition-colors duration-300">
+          <h3 class="text-2xl font-sans font-medium text-[#F4EFE7] mb-3 group-hover:text-[#C7A66A] transition-colors duration-300">
             ${t.title}
           </h3>
           <p class="text-sm text-[#8C8C8C] leading-relaxed mb-4">
@@ -169,7 +169,7 @@ function renderTreatments() {
         </div>
 
         <div class="pt-4 border-t border-white/5 flex items-center justify-between">
-          <span class="text-xs text-[#F4EFE7]/60 italic font-serif">
+          <span class="text-xs text-[#F4EFE7]/60 italic font-sans font-medium">
             ${t.highlight}
           </span>
           <a href="${CLINIC_INFO.whatsapp.link}" target="_blank" rel="noopener noreferrer" 
@@ -199,7 +199,7 @@ function renderBeforeAfterSliders() {
           <span class="text-xs uppercase tracking-widest text-[#C7A66A] font-semibold block mb-1">
             ${item.category}
           </span>
-          <h3 class="text-2xl sm:text-3xl font-serif text-[#F4EFE7]">
+          <h3 class="text-2xl sm:text-3xl font-sans font-medium text-[#F4EFE7]">
             ${item.title}
           </h3>
         </div>
@@ -321,7 +321,7 @@ function renderProfessionals() {
             <img src="images/profile-avatar.jpg" alt="${p.name}" class="w-full h-full object-cover">
           </div>
           <div>
-            <h3 class="text-2xl font-serif text-[#F4EFE7] group-hover:text-[#C7A66A] transition-colors">
+            <h3 class="text-2xl font-sans font-medium text-[#F4EFE7] group-hover:text-[#C7A66A] transition-colors">
               ${p.name}
             </h3>
             <span class="text-xs uppercase tracking-widest text-[#C7A66A] font-semibold block">
@@ -367,7 +367,7 @@ function renderTestimonials() {
           </div>
         </div>
 
-        <blockquote class="text-base sm:text-lg font-serif italic text-[#F4EFE7] leading-relaxed mb-6">
+        <blockquote class="text-base sm:text-lg font-sans font-medium italic text-[#F4EFE7] leading-relaxed mb-6">
           "${t.quote}"
         </blockquote>
       </div>
