@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+/* Google Sans font-face definitions (Google Fonts CDN hosted) */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/googlesans/v58/4UaGrENHsxJlGDuGo1OIlL3Kwp5MKg.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/googlesans/v58/4UabrENHsxJlGDuGo1OIlLU94Yt3CwZs-g.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/googlesans/v58/4UabrENHsxJlGDuGo1OIlLV154t3CwZs-g.woff2') format('woff2');
+}
+
 @layer base {
   :root {
     --bg-dark: #111111;
@@ -14,7 +39,7 @@
   body {
     background-color: var(--bg-dark);
     color: var(--text-cream);
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Google Sans', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -22,8 +47,47 @@
   }
 
   h1, h2, h3, .font-serif, .font-display {
-    font-family: 'Syne', 'Outfit', sans-serif;
-    letter-spacing: -0.03em;
+    font-family: 'Google Sans', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Escala e legibilidade aprimorada para Mobile (Fontes maiores e confortáveis) */
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  p {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+  .text-xs {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+  }
+  .text-\[11px\], .text-\[10px\] {
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+  }
+  .text-sm {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+  .text-base {
+    font-size: 16px !important;
+  }
+  h1 {
+    font-size: 2.25rem !important; /* 36px */
+    line-height: 1.2 !important;
+  }
+  h2 {
+    font-size: 1.85rem !important; /* ~30px */
+    line-height: 1.25 !important;
+  }
+  h3 {
+    font-size: 1.45rem !important;
+    line-height: 1.3 !important;
   }
 }
 
